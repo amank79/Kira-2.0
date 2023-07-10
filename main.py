@@ -189,7 +189,13 @@ if __name__ == "__main__":
                 im.save("Data/screenshot.jpg")
 
             elif "open" in query.lower():
-                open_program(query,voice)
+                query = query.replace("open", "")
+                query = query.replace("jarvis", "")
+                pyautogui.press("super")
+                pyautogui.typewrite(query)
+                pyautogui.sleep(2)
+                pyautogui.press("enter")
+
 
             elif "close" in query.lower():
                 close_program(query,voice)

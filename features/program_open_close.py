@@ -2,14 +2,13 @@ import pyautogui
 from chatbot import say,get_command
 import psutil
 
-def open_program(voice,query):
-    say("What you want to open sir")
-    query = get_command()
-    say(f"Opening {query}...", voice)
-    pyautogui.press("super")
-    pyautogui.typewrite(query)
-    pyautogui.sleep(5)
-    pyautogui.press("enter")
+# def open_program(voice,query):
+#     query = query.replace("open", "")
+#     query = query.replace("jarvis", "")
+#     pyautogui.press("super")
+#     pyautogui.typewrite(query)
+#     pyautogui.sleep(2)
+#     pyautogui.press("enter")
 
 def close_program(program_name,voice):
     for proc in psutil.process_iter():
