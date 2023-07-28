@@ -2,8 +2,8 @@
 import spotipy
 from spotipy import SpotifyOAuth
 
-weather_api_key = 'e3ef83c91a7bd6d33ec24a9662f9e4e9'
-news_api_key = "246b169effe24c81b632371b85404e9e"
+weather_api_key = 'your_weather_api_key'
+news_api_key = "your_news_api_key"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='Your_client_id',
                                                    client_secret='Your_secret_id',
                                                    redirect_uri='http://localhost:8000/callback',
