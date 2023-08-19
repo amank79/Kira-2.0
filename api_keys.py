@@ -8,5 +8,5 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='Your_client_id',
                                                    client_secret='Your_secret_id',
                                                    redirect_uri='http://localhost:8000/callback',
                                                    scope='user-modify-playback-state'))
-username = ""
-password = ""
+username = "your_email_id"
+password = "your_password"
